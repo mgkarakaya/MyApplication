@@ -1,0 +1,19 @@
+package com.example.mgk.readingcontacts;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
+/**
+ * Created by 320103 on 15.12.2015.
+ */
+public class Json {
+     FetchContacts contacts =new FetchContacts();
+
+    public Json(){
+        ArrayList<String> liste= contacts.getlist();
+        JSONArray Jsoncontacts = new JSONArray(liste);
+    }
+}
